@@ -1,24 +1,30 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+import { Stack } from "expo-router";
+import { View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useEffect } from "react";
+import ScanbotBarcodeSDK, { SdkConfiguration } from "react-native-scanbot-barcode-scanner-sdk";
+import { SCANBOT_LICENSE } from "@/src/config/scanbot";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
+  const insets = useSafeAreaInsets();
+
+  useEffect(() => {
+    ScanbotBarcodeSDK
+      .initialize(new SdkConfiguration({ licenseKey: SCANBOT_LICENSE }))
+      .then(result => console.log("✅ SDK inicializado:", result))
+      .catch(err => console.log("❌ Erro:", err));
+  }, []);
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: "#FFFFFF",
+        paddingTop: insets.top - 40,
+      }}
+    >
+      <Stack screenOptions={{ headerShown: false }} />
+    </View>
   );
 }
+  
