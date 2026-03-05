@@ -8782,9 +8782,11 @@
   "dependencies": {
     "expo": "^55.0.5",
     "expo-router": "^55.0.4",
-    "react": "19.2.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "react-native": "^0.83.2",
-    "react-native-scanbot-barcode-scanner-sdk": "^8.0.0"
+    "react-native-scanbot-barcode-scanner-sdk": "^8.0.0",
+    "react-native-scanbot-sdk": "^7.1.1"
   },
   "scripts": {
     "start": "expo start",
