@@ -114,59 +114,115 @@ export const styles = StyleSheet.create({
     marginTop: 4,
   },
 
-  /* MODAL */
+ /* MODAL */
 
 modalOverlay: {
   flex: 1,
-  backgroundColor: "rgba(0,0,0,0.4)",
-  justifyContent: "flex-end",
+  backgroundColor: "rgba(0,0,0,0.45)",
+  justifyContent: "center",
+  alignItems: "center",
+  paddingHorizontal: 24,
 },
 
 modalContainer: {
+  width: "100%",
+  maxWidth: 420,
   backgroundColor: "#FFFFFF",
-  borderTopLeftRadius: 24,
-  borderTopRightRadius: 24,
+  borderRadius: 22,
   padding: 24,
-  maxHeight: "75%",
-},
 
-modalHandle: {
-  width: 40,
-  height: 5,
-  backgroundColor: "#D1D5DB",
-  borderRadius: 10,
-  alignSelf: "center",
-  marginBottom: 16,
+  shadowColor: "#000",
+  shadowOpacity: 0.18,
+  shadowRadius: 20,
+  shadowOffset: { width: 0, height: 10 },
+  elevation: 10,
 },
 
 modalTitle: {
   fontSize: 22,
   fontWeight: "700",
-  color: "#111111",
-  marginBottom: 20,
+  color: "#0F172A",
+  marginBottom: 18,
+  textAlign: "center",
 },
 
+/* RESULT CARD */
+
+resultCard: {
+  backgroundColor: "#FAFAFA",
+  borderRadius: 14,
+  padding: 16,
+  marginBottom: 12,
+  borderWidth: 1,
+  borderColor: "#F1F5F9",
+},
+
+resultLabel: {
+  fontSize: 12,
+  color: "#6B7280",
+  marginBottom: 4,
+  fontWeight: "500",
+},
+
+resultValue: {
+  fontSize: 18,
+  fontWeight: "700",
+  color: "#111111",
+  letterSpacing: 0.6,
+},
+
+/* BUTTON */
+
+closeButton: {
+  marginTop: 18,
+  backgroundColor: "#E30613",
+  paddingVertical: 14,
+  borderRadius: 14,
+  alignItems: "center",
+},
+
+closeButtonText: {
+  color: "#FFFFFF",
+  fontWeight: "700",
+  fontSize: 16,
+},
+
+modalContainerLarge: {
+  width: "100%",
+  maxWidth: 460,
+  maxHeight: "85%",
+  backgroundColor: "#FFFFFF",
+  borderRadius: 22,
+  padding: 24,
+
+  shadowColor: "#000",
+  shadowOpacity: 0.18,
+  shadowRadius: 20,
+  shadowOffset: { width: 0, height: 10 },
+  elevation: 10,
+},
+
+/* SECTION TITLES */
+
 modalSectionTitle: {
-  fontSize: 14,
+  fontSize: 13,
   fontWeight: "700",
   color: "#6B7280",
   marginTop: 16,
   marginBottom: 8,
+  letterSpacing: 0.5,
+  textTransform: "uppercase",
 },
 
-modalCard: {
-  backgroundColor: "#FAFAFA",
-  padding: 14,
-  borderRadius: 12,
-  borderWidth: 1,
-  borderColor: "#F0F0F0",
-  marginBottom: 10,
-},
+/* INFO ROW */
 
 modalItemRow: {
   flexDirection: "row",
   justifyContent: "space-between",
-  marginBottom: 6,
+  alignItems: "center",
+  paddingVertical: 8,
+  borderBottomWidth: 1,
+  borderBottomColor: "#F1F5F9",
 },
 
 modalLabel: {
@@ -178,19 +234,15 @@ modalValue: {
   fontSize: 15,
   fontWeight: "600",
   color: "#111111",
+  maxWidth: "55%",
+  textAlign: "right",
 },
 
-closeButton: {
-  marginTop: 20,
-  backgroundColor: "#E30613",
-  padding: 16,
-  borderRadius: 14,
-  alignItems: "center",
-},
-
-closeButtonText: {
-  color: "#FFF",
-  fontWeight: "700",
-  fontSize: 16,
-},
+mrzRaw: {
+  fontFamily: "monospace",
+  fontSize: 14,
+  color: "#111111",
+  letterSpacing: 1,
+  lineHeight: 20,
+}
 });

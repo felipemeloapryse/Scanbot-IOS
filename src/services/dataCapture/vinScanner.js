@@ -1,15 +1,20 @@
-import { startVINScanner, VinScannerScreenConfiguration, } from 'react-native-scanbot-sdk/ui_v2';
+import { startVINScanner, VinScannerScreenConfiguration, } from "react-native-scanbot-sdk/ui_v2";
 
 export async function startVinScannerService() {
+
   try {
-
     const configuration = new VinScannerScreenConfiguration();
-
-    const vinScannerResult = await startVINScanner(configuration);
-
-    if (vinScannerResult.status === 'OK') {
+    const result = await startVINScanner(configuration);
+    const vin = result.data?.textResult?.rawText ?? null;
+    if (!vin) {
+      console.log("No VIN detected");
+      return null;
     }
-  } catch (e) {
-    console.error(e.message);
+    return {
+      vinNumber: vin
+    };
+  } catch (error) {
+    console.error("VIN scanner error:", error);
+    return null;
   }
 }

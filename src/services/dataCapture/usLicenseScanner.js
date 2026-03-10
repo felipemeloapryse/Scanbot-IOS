@@ -47,7 +47,7 @@ export async function startUsDriverLicenseScannerService() {
     if (!barcodeText) return null;
 
     const parsedData = parseAAMVABarcode(barcodeText);
-    console.log("PARSED DRIVER LICENSE:");
+    console.log("PARSED DRIVER LICENSE:") ;
     console.log(parsedData);
     return parsedData;
 

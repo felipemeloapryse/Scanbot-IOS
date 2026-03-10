@@ -1,5 +1,5 @@
 import ScanbotSDK from "react-native-scanbot-sdk";
-import { SCANBOT_LICENSE } from "../../config/scanbot";
+import { SCANBOT_LICENSE } from "../../config/scanbotLicense";
 
 let initialized = false;
 
@@ -18,5 +18,6 @@ export async function initializeScanbot() {
 
   } catch (error) {
     console.error("Scanbot SDK initialization error:", error);
+    
   }
 }

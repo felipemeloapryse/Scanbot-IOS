@@ -8,30 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		196E199879436CA43934859B /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372856F319C8D3512219B78F /* ExpoModulesProvider.swift */; };
+		3E3000B147854C12985D6B05 /* ScanbotSDKOCRData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD40122A2F4D1EA46C0B74 /* ScanbotSDKOCRData.bundle */; };
+		3E3C3616F6CF1E23437DD66B /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9636C03A6B7011EA55C15 /* ExpoModulesProvider.swift */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		4FDE667340864BEBAEACA076 /* ScanbotSDKOCRData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C86FA4B106D84C18944A4B23 /* ScanbotSDKOCRData.bundle */; };
-		57ADA7F72B68E0B2FCC2F3AC /* libPods-scanbotios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C949C3CB2594AA5A2AA929 /* libPods-scanbotios.a */; };
-		A4D32B5C0FC3AD56B40A08F0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F74D28FCDEB38B59FE0C6A3D /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		E63106F287FF451C703370AD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9F1B1EA582766B3BFDEE4C36 /* PrivacyInfo.xcprivacy */; };
+		EECE3604C5636A71AFDAB817 /* libPods-scanbotios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 038A0D81A1719C1100CD1B49 /* libPods-scanbotios.a */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		038A0D81A1719C1100CD1B49 /* libPods-scanbotios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scanbotios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* scanbotios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scanbotios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = scanbotios/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = scanbotios/Info.plist; sourceTree = "<group>"; };
-		19F0742FBF4B8FC944980D63 /* Pods-scanbotios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanbotios.release.xcconfig"; path = "Target Support Files/Pods-scanbotios/Pods-scanbotios.release.xcconfig"; sourceTree = "<group>"; };
-		372856F319C8D3512219B78F /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-scanbotios/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		62AF5CB91992A6FDE11C5428 /* Pods-scanbotios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanbotios.debug.xcconfig"; path = "Target Support Files/Pods-scanbotios/Pods-scanbotios.debug.xcconfig"; sourceTree = "<group>"; };
-		69C949C3CB2594AA5A2AA929 /* libPods-scanbotios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scanbotios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A9636C03A6B7011EA55C15 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-scanbotios/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		5B44FC84BB383E01808BB1D9 /* Pods-scanbotios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanbotios.release.xcconfig"; path = "Target Support Files/Pods-scanbotios/Pods-scanbotios.release.xcconfig"; sourceTree = "<group>"; };
+		6EAD40122A2F4D1EA46C0B74 /* ScanbotSDKOCRData.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; name = ScanbotSDKOCRData.bundle; path = ScanbotSDKOCRData.bundle; sourceTree = "<group>"; };
+		8A039CB03283026E8B8C06D2 /* Pods-scanbotios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanbotios.debug.xcconfig"; path = "Target Support Files/Pods-scanbotios/Pods-scanbotios.debug.xcconfig"; sourceTree = "<group>"; };
+		9F1B1EA582766B3BFDEE4C36 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = scanbotios/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = scanbotios/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		C86FA4B106D84C18944A4B23 /* ScanbotSDKOCRData.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; name = ScanbotSDKOCRData.bundle; path = ScanbotSDKOCRData.bundle; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = scanbotios/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* scanbotios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "scanbotios-Bridging-Header.h"; path = "scanbotios/scanbotios-Bridging-Header.h"; sourceTree = "<group>"; };
-		F74D28FCDEB38B59FE0C6A3D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = scanbotios/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57ADA7F72B68E0B2FCC2F3AC /* libPods-scanbotios.a in Frameworks */,
+				EECE3604C5636A71AFDAB817 /* libPods-scanbotios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +55,16 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				C86FA4B106D84C18944A4B23 /* ScanbotSDKOCRData.bundle */,
-				F74D28FCDEB38B59FE0C6A3D /* PrivacyInfo.xcprivacy */,
+				6EAD40122A2F4D1EA46C0B74 /* ScanbotSDKOCRData.bundle */,
+				9F1B1EA582766B3BFDEE4C36 /* PrivacyInfo.xcprivacy */,
+			);
+			name = scanbotios;
+			sourceTree = "<group>";
+		};
+		14D4BEDF69C45666C431F7BE /* scanbotios */ = {
+			isa = PBXGroup;
+			children = (
+				52A9636C03A6B7011EA55C15 /* ExpoModulesProvider.swift */,
 			);
 			name = scanbotios;
 			sourceTree = "<group>";
@@ -65,16 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				69C949C3CB2594AA5A2AA929 /* libPods-scanbotios.a */,
+				038A0D81A1719C1100CD1B49 /* libPods-scanbotios.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		77CAD2C8E68CCA59D9CF3B7B /* Pods */ = {
+		65A589ED684F6DD24029133F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				62AF5CB91992A6FDE11C5428 /* Pods-scanbotios.debug.xcconfig */,
-				19F0742FBF4B8FC944980D63 /* Pods-scanbotios.release.xcconfig */,
+				8A039CB03283026E8B8C06D2 /* Pods-scanbotios.debug.xcconfig */,
+				5B44FC84BB383E01808BB1D9 /* Pods-scanbotios.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -94,8 +102,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				77CAD2C8E68CCA59D9CF3B7B /* Pods */,
-				B64F88E0FE37D59BABD8BA36 /* ExpoModulesProviders */,
+				65A589ED684F6DD24029133F /* Pods */,
+				DE4405FFF38C02D91E48F609 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -110,22 +118,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		85421097FA3EDD2251CA7322 /* scanbotios */ = {
-			isa = PBXGroup;
-			children = (
-				372856F319C8D3512219B78F /* ExpoModulesProvider.swift */,
-			);
-			name = scanbotios;
-			sourceTree = "<group>";
-		};
-		B64F88E0FE37D59BABD8BA36 /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				85421097FA3EDD2251CA7322 /* scanbotios */,
-			);
-			name = ExpoModulesProviders;
-			sourceTree = "<group>";
-		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +125,14 @@
 			);
 			name = Supporting;
 			path = scanbotios/Supporting;
+			sourceTree = "<group>";
+		};
+		DE4405FFF38C02D91E48F609 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				14D4BEDF69C45666C431F7BE /* scanbotios */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,13 +143,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "scanbotios" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				6929437784990D871E56FCC9 /* [Expo] Configure project */,
+				FCE56A82A4D454CEC21AE074 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				8A0A12280FE5F81E8EA5FE18 /* [CP] Embed Pods Frameworks */,
+				9C6E2A89C3CCCB476EE14135 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,9 +169,7 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 4VV5PHPMC2;
 						LastSwiftMigration = 1250;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -201,8 +199,8 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				4FDE667340864BEBAEACA076 /* ScanbotSDKOCRData.bundle in Resources */,
-				A4D32B5C0FC3AD56B40A08F0 /* PrivacyInfo.xcprivacy in Resources */,
+				3E3000B147854C12985D6B05 /* ScanbotSDKOCRData.bundle in Resources */,
+				E63106F287FF451C703370AD /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +246,65 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6929437784990D871E56FCC9 /* [Expo] Configure project */ = {
+		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scanbotios/Pods-scanbotios-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
+				"${PODS_ROOT}/PDFNet/Tools-Localization",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Tools-Localization",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scanbotios/Pods-scanbotios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6E2A89C3CCCB476EE14135 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scanbotios/Pods-scanbotios-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/PDFNet.framework/PDFNet",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/Tools.framework/Tools",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ScanbotSDK/NONE/ScanbotSDK.framework/ScanbotSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ScanbotSDKNativeWrapper/ScanbotSDKNativeWrapper.framework/ScanbotSDKNativeWrapper",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermesvm.framework/hermesvm",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFNet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactNativeDependencies.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScanbotSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScanbotSDKNativeWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermesvm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scanbotios/Pods-scanbotios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE56A82A4D454CEC21AE074 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -272,60 +328,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-scanbotios/expo-configure-project.sh\"\n";
 		};
-		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-scanbotios/Pods-scanbotios-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/react-native-blob-util/ReactNativeBlobUtilPrivacyInfo.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ReactNativeBlobUtilPrivacyInfo.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scanbotios/Pods-scanbotios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8A0A12280FE5F81E8EA5FE18 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-scanbotios/Pods-scanbotios-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ScanbotSDK/NONE/ScanbotSDK.framework/ScanbotSDK",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ScanbotSDKNativeWrapper/ScanbotSDKNativeWrapper.framework/ScanbotSDKNativeWrapper",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermesvm.framework/hermesvm",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactNativeDependencies.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScanbotSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScanbotSDKNativeWrapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermesvm.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scanbotios/Pods-scanbotios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -334,7 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				196E199879436CA43934859B /* ExpoModulesProvider.swift in Sources */,
+				3E3C3616F6CF1E23437DD66B /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,15 +345,12 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62AF5CB91992A6FDE11C5428 /* Pods-scanbotios.debug.xcconfig */;
+			baseConfigurationReference = 8A039CB03283026E8B8C06D2 /* Pods-scanbotios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = scanbotios/scanbotios.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4VV5PHPMC2;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -382,15 +381,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19F0742FBF4B8FC944980D63 /* Pods-scanbotios.release.xcconfig */;
+			baseConfigurationReference = 5B44FC84BB383E01808BB1D9 /* Pods-scanbotios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = scanbotios/scanbotios.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4VV5PHPMC2;
 				INFOPLIST_FILE = scanbotios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (

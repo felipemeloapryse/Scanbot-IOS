@@ -1,16 +1,22 @@
-# OSX
-#
+# macOS
 .DS_Store
 
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
+# Android Studio / IntelliJ
+.idea/
 *.iml
-*.hprof
+
+# Gradle
+.gradle/
+build/
+
+# Native builds
 .cxx/
 
-# Bundle artifacts
+# Local SDK config
+local.properties
+
+# Crash logs
+*.hprof
+
+# React Native bundle
 *.jsbundle

@@ -1,43 +1,45 @@
 import { CreditCardScannerScreenConfiguration, startCreditCardScanner, } from "react-native-scanbot-sdk/ui_v2";
 
+import { parseScanbotFields } from "../../utils/scanbotParser";
+
 export default async function startCreditCardScannerService() {
+
   try {
 
     const configuration = new CreditCardScannerScreenConfiguration();
     const result = await startCreditCardScanner(configuration);
-
-    if (result.status !== "OK") {
+    if (!result || result.status !== "OK") {
       console.log("Credit card scanning canceled");
       return null;
     }
 
     const creditCard = result.data?.creditCard;
-    console.log("CREDIT CARD RAW RESULT:");
-    console.log(creditCard);
-
     if (!creditCard?.fields) {
       console.log("No fields detected");
       return null;
     }
 
-    const data = {};
-    creditCard.fields.forEach((field) => {
-      const name = field.type?.name;
-      const value = field.value?.text;
+    const parsed = parseScanbotFields(creditCard.fields);
+    const formatExpiry = (date) => {
+      if (!date) return null;
 
-      if (name && value) {
-        data[name] = value;
-      }
-    });
+      const parts = date.split("/");
+      if (parts.length !== 2) return date;
+
+      return `20${parts[1]}-${parts[0]}`;
+    };
+
+    const data = {
+      cardNumber: parsed.CardNumber,
+      cardholderName: parsed.CardholderName,
+      expiryDate: formatExpiry(parsed.ExpiryDate)
+    };
+
     console.log("CREDIT CARD PARSED:");
     console.log(data);
-    console.log("Card Number:", data.CardNumber);
-    console.log("Cardholder:", data.CardholderName);
-    console.log("Expiry:", data.ExpiryDate);
     return data;
-
-  } catch (e) {
-    console.error("Credit card scanner error:", e);
+  } catch (error) {
+    console.error("Credit card scanner error:", error);
     return null;
   }
 }
