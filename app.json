@@ -12,25 +12,6 @@
       "supportsTablet": true
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ],
-      [
-        "react-native-scanbot-barcode-scanner-sdk",
-        {
-          "iOSCameraUsageDescription": "Barcode Camera permissions",
-          "androidCameraPermission": true,
-          "androidCameraFeature": true,
-          "mavenURLs": true
-        }
-      ]
     ]
   }
 }

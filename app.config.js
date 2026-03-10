@@ -19,6 +19,7 @@ export default ({ config }) => {
     android: {
       package: "com.anonymous.scanbotios"
     },
+    
 
     plugins: [
       "expo-router",
