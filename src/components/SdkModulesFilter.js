@@ -20,29 +20,9 @@ export default function SdkModulesFilter({ selected, onSelect }) {
           const isActive = selected === item.label;
 
           return (
-            <TouchableOpacity
-              key={item.label}
-              onPress={() => onSelect(item.label)}
-              style={[
-                styles.filterButton,
-                isActive && styles.filterButtonActive,
-              ]}
-            >
-              <Ionicons
-                name={item.icon}
-                size={16}
-                color={isActive ? "#E30613" : "#6B7280"}
-                style={{ marginRight: 8 }}
-              />
-
-              <Text
-                style={[
-                  styles.filterText,
-                  isActive && styles.filterTextActive,
-                ]}
-              >
-                {item.label}
-              </Text>
+            <TouchableOpacity key={item.label} onPress={() => onSelect(item.label)} style={[ styles.filterButton, isActive && styles.filterButtonActive, ]} >
+              <Ionicons name={item.icon} size={16} color={isActive ? "#E30613" : "#6B7280"} style={{ marginRight: 8 }} />
+              <Text style={[ styles.filterText, isActive && styles.filterTextActive, ]} > {item.label} </Text>
             </TouchableOpacity>
           );
         })}

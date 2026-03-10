@@ -1,33 +1,27 @@
-import ScanbotSDK from "react-native-scanbot-sdk";
-import { startDocumentScanner } from "react-native-scanbot-sdk/ui_v2";
+import {
+  DocumentDataExtractorConfiguration,
+} from "react-native-scanbot-sdk";
+
+import { startDocumentDataExtractor } from "react-native-scanbot-sdk/ui_v2";
+
 
 export async function startGermanIdScannerService() {
 
   try {
 
-    const result = await startDocumentScanner({
-      multiPageEnabled: false,
-      autoCaptureEnabled: true,
-    });
+    const configuration = new DocumentDataExtractorConfiguration();
 
-    if (result.status !== "OK") return null;
+    const result = await startDocumentDataExtractor(configuration);
 
-    const pages = result.data?.pages ?? [];
+    if (result.status === "OK") {
 
-    const imageUris = pages
-      .map(p => p.documentImageURI)
-      .filter(Boolean);
+      console.log("GERMAN ID RESULT:");
+      console.log(result.data);
 
-    if (imageUris.length === 0) return null;
+      return result.data;
+    }
 
-    const extraction = await ScanbotSDK.extractDocumentData({
-      imageFileUris: imageUris,
-    });
-
-    console.log("GERMAN ID RESULT:");
-    console.log(extraction);
-
-    return extraction;
+    return null;
 
   } catch (error) {
 
@@ -35,4 +29,5 @@ export async function startGermanIdScannerService() {
     return null;
 
   }
+
 }

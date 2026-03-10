@@ -1,7 +1,6 @@
 import ScanbotSDK from "react-native-scanbot-sdk";
 
 export async function startEhicScannerService() {
-
   try {
 
     const result = await ScanbotSDK.UI.startEHICScanner();
@@ -12,16 +11,11 @@ export async function startEhicScannerService() {
     }
 
     const card = result.data;
-
     console.log("EHIC RESULT:");
     console.log(card);
-
     return card;
-
   } catch (error) {
-
     console.error("EHIC scanner error:", error);
     return null;
-
   }
 }
