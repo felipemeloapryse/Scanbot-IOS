@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ScrollView, Text, View } from "react-native";
 import ModuleCard from "../components/ModuleCard";
-import DriverLicenseResultModal from "../modals/DriverLicenseResultModal";
+import DriverLicenseResultModal from "../components/modals/DriverLicenseResultModal";
 import { styles } from "../styles/homeStyles";
 
 import { startEhicScannerService } from "../services/dataCapture/ehicScanner";
