@@ -1,5 +1,5 @@
 import { Modal, ScrollView, Text, TouchableOpacity, View } from "react-native";
-import { styles } from "../styles/homeStyles";
+import { styles } from "../../styles/homeStyles";
 
 export default function DriverLicenseResultModal({ visible, data, onClose }) {
 
