@@ -14,10 +14,10 @@ buildscript {
 
 allprojects {
   repositories {
-// @generated begin react-native-scanbot-barcode-scanner-sdk - expo prebuild (DO NOT MODIFY) sync-f562b0d9ddefb70168250bcfbd61309efc92831a
+// @generated begin react-native-scanbot-sdk - expo prebuild (DO NOT MODIFY) sync-f562b0d9ddefb70168250bcfbd61309efc92831a
    maven { url "https://nexus.scanbot.io/nexus/content/repositories/releases/" }
    maven { url "https://nexus.scanbot.io/nexus/content/repositories/snapshots/" }
-// @generated end react-native-scanbot-barcode-scanner-sdk
+// @generated end react-native-scanbot-sdk
     google()
     mavenCentral()
     maven { url 'https://www.jitpack.io' }

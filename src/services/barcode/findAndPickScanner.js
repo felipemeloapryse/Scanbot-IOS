@@ -1,4 +1,4 @@
-import { BarcodeScannerScreenConfiguration, ExpectedBarcode, FindAndPickScanningMode, ScanbotBarcode, } from "react-native-scanbot-barcode-scanner-sdk";
+import { BarcodeScannerScreenConfiguration, ExpectedBarcode, FindAndPickScanningMode, ScanbotBarcode, } from "react-native-scanbot-sdk/ui_v2";
 
 
 export async function startFindAndPickScanner() {

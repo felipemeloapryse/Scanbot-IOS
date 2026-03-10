@@ -1,4 +1,4 @@
-import { BarcodeScannerScreenConfiguration, MultipleScanningMode, ScanbotBarcode } from "react-native-scanbot-barcode-scanner-sdk";
+import { BarcodeScannerScreenConfiguration, MultipleScanningMode, startBarcodeScanner } from "react-native-scanbot-sdk/ui_v2";
 
 export async function startArOverlayScanner() {
   try {
@@ -10,10 +10,10 @@ export async function startArOverlayScanner() {
     config.useCase.arOverlay.polygon.visible = true;
     config.useCase.arOverlay.textColor = "#FFFFFF";
     config.useCase.arOverlay.polygonColor = "#00FF00";
-    const result = await ScanbotBarcode.startScanner(config);
+    const result = await startBarcodeScanner(config);
     return result;
   } catch (error) {
     console.error("Error in startArOverlayScanner: ", error);
     throw error;
   }
-}
+}startBarcodeScanner

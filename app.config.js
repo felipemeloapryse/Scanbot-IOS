@@ -23,12 +23,15 @@ export default ({ config }) => {
     plugins: [
       "expo-router",
       [
-        "react-native-scanbot-barcode-scanner-sdk",
+        "react-native-scanbot-sdk",
         {
           iOSCameraUsageDescription: "Barcode Camera permissions",
           androidCameraPermission: true,
           androidCameraFeature: true,
-          mavenURLs: true
+          mavenURLs: true,
+          largeHeap: true,
+          mavenURLs: true,
+          ocrBlobsDirPath: "./assets/ocr_blobs"
         }
       ]
     ]

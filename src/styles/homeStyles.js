@@ -12,7 +12,6 @@ export const styles = StyleSheet.create({
 
   cardsHeader: {
     paddingHorizontal: 24,
-    marginTop: 30,
   },
 
   cardsScroll: {
@@ -25,7 +24,8 @@ export const styles = StyleSheet.create({
     height: 40,
     alignSelf: "flex-start",
     marginTop: 20,
-    marginBottom: 30,
+    marginBottom: 20,
+    marginLeft: -15
   },
 
   sdkTitle: {
@@ -116,49 +116,81 @@ export const styles = StyleSheet.create({
 
   /* MODAL */
 
-  modalOverlay: {
-    flex: 1,
-    backgroundColor: "rgba(0,0,0,0.4)",
-    justifyContent: "center",
-    padding: 24,
-  },
+modalOverlay: {
+  flex: 1,
+  backgroundColor: "rgba(0,0,0,0.4)",
+  justifyContent: "flex-end",
+},
 
-  modalContainer: {
-    backgroundColor: "#FFFFFF",
-    borderRadius: 20,
-    padding: 24,
-    maxHeight: "70%",
-  },
+modalContainer: {
+  backgroundColor: "#FFFFFF",
+  borderTopLeftRadius: 24,
+  borderTopRightRadius: 24,
+  padding: 24,
+  maxHeight: "75%",
+},
 
-  modalTitle: {
-    fontSize: 20,
-    fontWeight: "700",
-    marginBottom: 20,
-  },
+modalHandle: {
+  width: 40,
+  height: 5,
+  backgroundColor: "#D1D5DB",
+  borderRadius: 10,
+  alignSelf: "center",
+  marginBottom: 16,
+},
 
-  resultItem: {
-    padding: 12,
-    backgroundColor: "#F3F4F6",
-    borderRadius: 10,
-    marginBottom: 10,
-  },
+modalTitle: {
+  fontSize: 22,
+  fontWeight: "700",
+  color: "#111111",
+  marginBottom: 20,
+},
 
-  resultText: {
-    fontSize: 16,
-    color: "#111",
-  },
+modalSectionTitle: {
+  fontSize: 14,
+  fontWeight: "700",
+  color: "#6B7280",
+  marginTop: 16,
+  marginBottom: 8,
+},
 
-  closeButton: {
-    marginTop: 20,
-    backgroundColor: "#E30613",
-    padding: 14,
-    borderRadius: 12,
-    alignItems: "center",
-  },
+modalCard: {
+  backgroundColor: "#FAFAFA",
+  padding: 14,
+  borderRadius: 12,
+  borderWidth: 1,
+  borderColor: "#F0F0F0",
+  marginBottom: 10,
+},
 
-  closeButtonText: {
-    color: "#FFF",
-    fontWeight: "600",
-    fontSize: 16,
-  },
+modalItemRow: {
+  flexDirection: "row",
+  justifyContent: "space-between",
+  marginBottom: 6,
+},
+
+modalLabel: {
+  fontSize: 14,
+  color: "#6B7280",
+},
+
+modalValue: {
+  fontSize: 15,
+  fontWeight: "600",
+  color: "#111111",
+},
+
+closeButton: {
+  marginTop: 20,
+  backgroundColor: "#E30613",
+  padding: 16,
+  borderRadius: 14,
+  alignItems: "center",
+},
+
+closeButtonText: {
+  color: "#FFF",
+  fontWeight: "700",
+  fontSize: 16,
+},
 });

@@ -7,12 +7,10 @@
     "icon": "./src/assets/images/icon.png",
     "scheme": "scanbotios",
     "userInterfaceStyle": "automatic",
-
     "ios": {
       "bundleIdentifier": "com.anonymous.scanbotios",
       "supportsTablet": true
     },
-
     "plugins": [
       "expo-router",
       [
