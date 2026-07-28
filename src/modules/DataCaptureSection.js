@@ -10,6 +10,7 @@ import { startUsDriverLicenseScannerService } from "../services/dataCapture/usLi
 
 import { startCheckScannerService } from "../services/dataCapture/checkScanner";
 import startCreditCardScannerService from "../services/dataCapture/creditCardScanner";
+import startCreditCardPOC from "../services/dataCapture/creditCardPOC";
 
 import ScanResultModal from "../components/modals/ScanResultModal";
 
@@ -119,6 +120,9 @@ export default function DataCapture() {
         <Text style={{paddingBottom:20, paddingTop: 15, fontSize:16, color:'grey', fontWeight: 'bold' }} >Financial Documents</Text>
         <ModuleCard title="Check Scanner" description="Extract check data from the MICR code on the bottom of a check" icon="cash-outline" onPress={handleCheckScan} />
         <ModuleCard title="Credit Card Scanner" description="Extract details from the front side of Visa, MasterCard and AMEX cards" icon="card-outline" onPress={handleCreditCardScan} />
+
+                <ModuleCard title="POC Credit Card" description="Extract details from the front side of Visa, MasterCard and AMEX cards" icon="card-outline" onPress={startCreditCardPOC} />
+
         <Text style={{paddingBottom:20, paddingTop: 15, fontSize:16, color:'grey', fontWeight: 'bold' }} >Single-Line OCR</Text>
         <ModuleCard title="Data Scanner" description="Capture single line data in an instant" icon="text-outline" onPress={handleDataScanner} />
         <ModuleCard title="VIN Scanner" description="Extract Vehicle Identification Numbers located behind the windshield or in the driver's door." icon="car-outline" onPress={handleVinScan} />

@@ -8,6 +8,7 @@ export async function startDocumentOcrService() {
     const result = await startDocumentScanner({
       multiPageEnabled: true,
       autoCaptureEnabled: true,
+      
     });
 
     if (result.status !== "OK") return null;

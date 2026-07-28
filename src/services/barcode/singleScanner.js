@@ -18,5 +18,6 @@ export async function startSingleScanner() {
   } catch (error) {
     console.error("Error while scanning:", error);
     return null;
+    
   }
 }
