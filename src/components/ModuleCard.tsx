@@ -1,10 +1,29 @@
 import { Ionicons } from "@expo/vector-icons";
+import type { ComponentProps } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "../styles/homeStyles";
 
-export default function ModuleCard({ title, description, icon, onPress }) {
+export type IoniconName = ComponentProps<typeof Ionicons>["name"];
+
+type ModuleCardProps = {
+  title: string;
+  description: string;
+  icon: IoniconName;
+  onPress: () => void;
+};
+
+export default function ModuleCard({
+  title,
+  description,
+  icon,
+  onPress,
+}: ModuleCardProps) {
   return (
-    <TouchableOpacity style={styles.card} activeOpacity={0.85} onPress={onPress} >
+    <TouchableOpacity
+      style={styles.card}
+      activeOpacity={0.85}
+      onPress={onPress}
+    >
       <View style={styles.iconContainer}>
         <Ionicons name={icon} size={22} color="#E30613" />
       </View>

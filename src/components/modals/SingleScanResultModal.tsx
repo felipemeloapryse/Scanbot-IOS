@@ -1,24 +1,43 @@
 import { FlatList, Modal, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "../../styles/homeStyles";
 
+type SingleScanResultModalProps = {
+  visible: boolean;
+  results: string[];
+  onClose: () => void;
+};
+
 export default function SingleScanResultModal({
   visible,
   results,
   onClose,
-}) {
+}: SingleScanResultModalProps) {
   return (
-    <Modal visible={visible} animationType="fade" transparent onRequestClose={onClose} >
+    <Modal
+      visible={visible}
+      animationType="fade"
+      transparent
+      onRequestClose={onClose}
+    >
       <View style={styles.modalOverlay}>
         <View style={styles.modalContainer}>
           <Text style={styles.modalTitle}>Scan Result</Text>
-          <FlatList data={results} keyExtractor={(item, index) => index.toString()} showsVerticalScrollIndicator={false} renderItem={({ item }) => (
+          <FlatList
+            data={results}
+            keyExtractor={(item, index) => index.toString()}
+            showsVerticalScrollIndicator={false}
+            renderItem={({ item }) => (
               <View style={styles.resultCard}>
                 <Text style={styles.resultLabel}>Barcode</Text>
                 <Text style={styles.resultValue}>{item}</Text>
               </View>
             )}
           />
-          <TouchableOpacity style={styles.closeButton} activeOpacity={0.85} onPress={onClose} >
+          <TouchableOpacity
+            style={styles.closeButton}
+            activeOpacity={0.85}
+            onPress={onClose}
+          >
             <Text style={styles.closeButtonText}>Done</Text>
           </TouchableOpacity>
         </View>

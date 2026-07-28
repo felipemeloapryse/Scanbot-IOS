@@ -3,9 +3,8 @@ import { SCANBOT_LICENSE } from "../../config/scanbotLicense";
 
 let initialized = false;
 
-export async function initializeScanbot() {
+export async function initializeScanbot(): Promise<void> {
   try {
-
     if (initialized) return;
 
     const result = await ScanbotSDK.initializeSDK({
@@ -15,9 +14,7 @@ export async function initializeScanbot() {
     console.log("Scanbot SDK initialized:", result);
 
     initialized = true;
-
   } catch (error) {
     console.error("Scanbot SDK initialization error:", error);
-    
   }
 }

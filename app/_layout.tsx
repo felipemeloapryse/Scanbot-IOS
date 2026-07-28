@@ -6,7 +6,6 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { initializeScanbot } from "../src/services/scanbot/initializeScanbot";
 
 export default function RootLayout() {
-
   const insets = useSafeAreaInsets();
 
   useEffect(() => {

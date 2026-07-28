@@ -1,10 +1,25 @@
-import { BarcodeScannerScreenConfiguration, startBarcodeScanner } from "react-native-scanbot-sdk/ui_v2";
+import {
+  BarcodeScannerScreenConfiguration,
+  startBarcodeScanner,
+} from "react-native-scanbot-sdk/ui_v2";
 
-function parseAAMVABarcode(text) {
+export type UsDriverLicenseData = {
+  firstName: string | null;
+  lastName: string | null;
+  middleName: string | null;
+  licenseNumber: string | null;
+  birthDate: string | null;
+  expirationDate: string | null;
+  address: string | null;
+  city: string | null;
+  state: string | null;
+  zip: string | null;
+};
 
+function parseAAMVABarcode(text: string): UsDriverLicenseData {
   const lines = text.split("\n");
-  const getField = (code) => {
-    const line = lines.find(l => l.startsWith(code));
+  const getField = (code: string): string | null => {
+    const line = lines.find((l) => l.startsWith(code));
     return line ? line.replace(code, "").trim() : null;
   };
 
@@ -22,10 +37,8 @@ function parseAAMVABarcode(text) {
   };
 }
 
-export async function startUsDriverLicenseScannerService() {
-
+export async function startUsDriverLicenseScannerService(): Promise<UsDriverLicenseData | null> {
   try {
-
     const configuration = new BarcodeScannerScreenConfiguration();
     configuration.scannerConfiguration.barcodeFormats = ["PDF_417"];
     const result = await startBarcodeScanner(configuration);
@@ -35,7 +48,7 @@ export async function startUsDriverLicenseScannerService() {
       return null;
     }
 
-    const barcodeItem = result.data?.items?.[0];
+    const barcodeItem = result.data.items?.[0];
     if (!barcodeItem) {
       console.log("No barcode detected");
       return null;
@@ -47,14 +60,11 @@ export async function startUsDriverLicenseScannerService() {
     if (!barcodeText) return null;
 
     const parsedData = parseAAMVABarcode(barcodeText);
-    console.log("PARSED DRIVER LICENSE:") ;
+    console.log("PARSED DRIVER LICENSE:");
     console.log(parsedData);
     return parsedData;
-
   } catch (error) {
-
     console.error("US Driver License scanner error:", error);
     return null;
-    
   }
 }

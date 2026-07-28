@@ -1,20 +1,28 @@
-import { DocumentDataExtractorConfiguration } from "react-native-scanbot-sdk";
-import { startDocumentDataExtractor } from "react-native-scanbot-sdk/ui_v2";
+import {
+  DocumentDataExtractorScreenConfiguration,
+  startDocumentDataExtractor,
+} from "react-native-scanbot-sdk/ui_v2";
 import { parseScanbotFields } from "../../utils/scanbotParser";
 
 export async function startGermanIdScannerService() {
-
   try {
-
-    const configuration = new DocumentDataExtractorConfiguration();
+    // NOTE: the original code imported `DocumentDataExtractorConfiguration`
+    // from the ROOT `react-native-scanbot-sdk` package and passed it to
+    // `startDocumentDataExtractor` (from `ui_v2`). That's the wrong class -
+    // the root `DocumentDataExtractorConfiguration` is the config for the
+    // *still-image* extractor (`ScanbotSDK.extractDocumentDataFromStillImage`),
+    // not for this Ready-To-Use UI screen. `startDocumentDataExtractor`
+    // expects `DocumentDataExtractorScreenConfiguration` from `ui_v2`,
+    // used below.
+    const configuration = new DocumentDataExtractorScreenConfiguration();
     const result = await startDocumentDataExtractor(configuration);
     if (!result || result.status !== "OK") return null;
 
-    const document = result.data?.document;
+    const document = result.data.document;
     if (!document) return null;
 
     const parsed = parseScanbotFields(document.fields);
-    const formatDate = (date) => {
+    const formatDate = (date: string | null): string | null => {
       if (!date) return null;
 
       const parts = date.split(".");
@@ -34,7 +42,7 @@ export async function startGermanIdScannerService() {
       birthDate: formatDate(parsed.BirthDate),
       expiryDate: formatDate(parsed.ExpiryDate),
       nationality: parsed.Nationality,
-      birthplace: parsed.Birthplace
+      birthplace: parsed.Birthplace,
     };
   } catch (error) {
     console.error("German ID scanner error:", error);

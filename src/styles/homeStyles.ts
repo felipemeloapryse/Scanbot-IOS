@@ -146,6 +146,18 @@ modalTitle: {
   textAlign: "center",
 },
 
+/* MODAL FIELD LIST CARD */
+/* NOTE: this style was referenced by ScanResultModal in the original JS
+   code (styles.modalCard) but was never defined, so it silently rendered
+   with no card background. Added here to match the app's visual language. */
+modalCard: {
+  backgroundColor: "#FAFAFA",
+  borderRadius: 14,
+  borderWidth: 1,
+  borderColor: "#F1F5F9",
+  paddingHorizontal: 16,
+},
+
 /* RESULT CARD */
 
 resultCard: {
