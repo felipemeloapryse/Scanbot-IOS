@@ -17,18 +17,7 @@ export async function startFindAndPickScanner(): Promise<
     mode.arOverlay.automaticSelectionEnabled = false;
     mode.arOverlay.visible = true;
     mode.arOverlay.polygon.visible = true;
-
-    // NOTE: same fix as arOverlay.ts - `mode.arOverlay.polygonColor` and
-    // `.textColor` don't exist on `ArOverlayFindAndPickConfiguration`.
-    // The find-and-pick overlay's polygon colors are driven by scan status
-    // (partiallyScanned / rejected / completed), so we set the "completed"
-    // state color, which is the closest equivalent to the original intent.
     mode.arOverlay.polygon.completed.strokeColor = "#00C853";
-
-    // NOTE: the original code also passed a `subtitle` to every
-    // ExpectedBarcode below, but `ExpectedBarcode` in SDK v7.1.1 only has
-    // `barcodeValue`, `title`, `image` and `count` - `subtitle` isn't part
-    // of the class, so those values were silently discarded at runtime.
     mode.expectedBarcodes = [
       new ExpectedBarcode({
         barcodeValue: "3619876543213",

@@ -1,14 +1,4 @@
-/**
- * The Scanbot SDK exposes two different "field" shapes depending on which
- * scanner produced them:
- *
- *  - Generic document fields (MRZ, Check, Credit Card, German ID, ...)
- *    have `type: { name: string, ... }` and `value: { text: string } | null`.
- *  - EHIC scanner fields have a flat `type: string` and `value: string`.
- *
- * This type covers both shapes structurally so `parseScanbotFields` can be
- * called safely with the result of any of the scanner services below.
- */
+
 export type ScanbotParsableField = {
   type?: { name?: string | null } | string | null;
   value?: { text?: string | null } | string | null;

@@ -4,16 +4,7 @@ import {
   startDocumentScanner,
 } from "react-native-scanbot-sdk/ui_v2";
 
-// NOTE: the original code passed a plain `{ multiPageEnabled: true,
-// autoCaptureEnabled: true }` object to `startDocumentScanner` from
-// `ui_v2`. Those two keys don't exist anywhere on `DocumentScanningFlow` -
-// `multiPageEnabled` belonged to the deprecated v1
-// `DocumentScannerScreenConfiguration`, and `autoCaptureEnabled` never
-// existed at all in either API (the real v1 name is `autoSnappingEnabled`).
-// In `ui_v2`, multi-page scanning is inherent to the flow (no toggle
-// needed), and auto-capture is `screens.camera.cameraConfiguration
-// .autoSnappingEnabled`, which already defaults to `true`. Set explicitly
-// below to preserve the original intent.
+
 function buildDocumentScanningFlow(): DocumentScanningFlow {
   return new DocumentScanningFlow({
     screens: {

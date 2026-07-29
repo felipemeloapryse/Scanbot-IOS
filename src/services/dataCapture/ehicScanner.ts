@@ -14,11 +14,7 @@ function formatDate(date: string | null): string | null {
 
 export async function startEhicScannerService() {
   try {
-    // NOTE: `startEHICScanner` requires a configuration argument in SDK
-    // v7.1.1 (the original code called it with none, which doesn't
-    // compile). `HealthInsuranceCardScannerConfiguration` is a plain
-    // interface with all-optional fields, so `{}` gives the same
-    // "use every default" behavior the original call intended.
+  
     const result = await ScanbotSDK.UI.startEHICScanner(
       {} as HealthInsuranceCardScannerConfiguration
     );

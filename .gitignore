@@ -6,3 +6,6 @@ node_modules/
 .expo-shared/
 dist/
 
+# License
+src/config/
+

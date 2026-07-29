@@ -6,14 +6,7 @@ import { parseScanbotFields } from "../../utils/scanbotParser";
 
 export async function startGermanIdScannerService() {
   try {
-    // NOTE: the original code imported `DocumentDataExtractorConfiguration`
-    // from the ROOT `react-native-scanbot-sdk` package and passed it to
-    // `startDocumentDataExtractor` (from `ui_v2`). That's the wrong class -
-    // the root `DocumentDataExtractorConfiguration` is the config for the
-    // *still-image* extractor (`ScanbotSDK.extractDocumentDataFromStillImage`),
-    // not for this Ready-To-Use UI screen. `startDocumentDataExtractor`
-    // expects `DocumentDataExtractorScreenConfiguration` from `ui_v2`,
-    // used below.
+    
     const configuration = new DocumentDataExtractorScreenConfiguration();
     const result = await startDocumentDataExtractor(configuration);
     if (!result || result.status !== "OK") return null;

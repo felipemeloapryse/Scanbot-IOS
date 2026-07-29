@@ -8,10 +8,7 @@ export async function startVinScannerService() {
     const configuration = new VinScannerScreenConfiguration();
     const result = await startVINScanner(configuration);
 
-    // NOTE: same fix as dataScanner.ts - the original code read
-    // `result.data?.textResult?.rawText` without narrowing on
-    // `result.status === "OK"` first, which doesn't type-check against
-    // the discriminated `ResultWrapper<T>` union.
+    
     if (result.status !== "OK") {
       console.log("VIN scanning canceled");
       return null;
