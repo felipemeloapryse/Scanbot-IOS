@@ -7,5 +7,5 @@ node_modules/
 dist/
 
 # License
-src/config/
+src/config
 
